@@ -23,6 +23,7 @@ public class ScoreManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+
         }
         else
         {
@@ -34,14 +35,6 @@ public class ScoreManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
 
     }
 
