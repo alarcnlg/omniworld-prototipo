@@ -81,6 +81,9 @@ public class Level : MonoBehaviour
         items.SetActive(true);
         EnableDisableChildrenObjects(items, true);
 
+        // Disable marks
+        nextStep.transform.Find("Marks").gameObject.SetActive(false);
+
         // Disable current step
         if(_currentStepIndex >= 0) {
             GameObject currentStep = _steps[_currentStepIndex];
